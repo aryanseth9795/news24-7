@@ -2,7 +2,10 @@ import { Geist, Geist_Mono, Roboto_Slab } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "sonner";
 
-const roboto_Slab = Roboto_Slab();
+const roboto = Roboto_Slab({
+  subsets: ['latin'], 
+  display: 'swap',     
+});
 
 export const metadata = {
   title: "News 24/7",
@@ -12,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${roboto_Slab.variable} antialiased`}>
+      <body className={roboto.className}>
         <Toaster position="top-center" richColors bg="bg-red-500" size="md" />
         {children}
       </body>
