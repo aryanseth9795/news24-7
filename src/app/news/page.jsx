@@ -136,7 +136,7 @@ const News = () => {
   }, [district]);
 
   return (
-    <div className="w-full h-full p-4 flex flex-col gap-10 bg-gray-300 items-center justify-center">
+    <div className="w-full h-full  flex flex-col gap-10 bg-gray-300 items-center justify-center">
       {loading ? (
         <NewsSkeleton count={3} />
       ) : (

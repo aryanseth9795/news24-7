@@ -3,11 +3,11 @@ import { Button } from "@/components/ui/button";
 
 const NewsItem = ({ title, description, image, link }) => {
   return (
-    <div className="w-[90%] h-[50vh] bg-white shadow-md rounded-lg p-8 flex flex-col md:flex-row justify-start gap-10">
+    <div className="w-full h-card bg-white shadow-md rounded-lg p-8 flex flex-col md:flex-row justify-start gap-10">
       <img
         src={image}
         alt={title}
-        width={400}
+        width={300}
         height={300}
         className="rounded-md"
       />
