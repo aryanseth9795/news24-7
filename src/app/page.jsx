@@ -9,7 +9,7 @@ export default function Home() {
       <Header
         style={{ position: "static", top: 0, left: 0, right: 0, zIndex: 10 }}
       />
-      <div className="flex h-[75vh] pt-20">
+      <div className="flex h-[60vh] pt-25 justify-center ">
         <Landing />
       </div>
 
